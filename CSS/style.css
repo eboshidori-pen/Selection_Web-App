@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/*余白を作る*/
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.big-bg{
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/*ページヘッダー*/
+.logo{
+    width: 210px;
+    margin-top: 14px;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+/*ヘッダー見出し*/
+.page-title{
+  font-size: 3rem;
+  font-family: 'ヒラギノ角ゴ Pro W3', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/*ホーム画面*/
+#home{
+  background-image: url(../images/rinmon101804_TP_V.jpg);
+  background-color: #fff7f4a9;
+  background-blend-mode: soft-light;
+  min-height: 100vh;
+}
+.home-content{
+    text-align: center;
+    margin-top: 20%;
+}
+.catch-copy {
+    font-size: 3rem;
+    font-family: 'ヒラギノ角ゴ Pro W3', serif;
+    text-transform: uppercase;
+    font-weight: 1000;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  @media screen and (max-width: 790px) {
+    .home-content{
+        text-align: center;
+        margin-top: 35%;
+    }
+    .catch-copy {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+  }
+
+.button{/*検索画面にいくボタン*/
+  font-size: 1.375rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  padding: 13px 32px;
+}
+
+/*検索画面*/
+.search-box-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  background-color: #F9EFE7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+input[type=text] {
+  padding: 6px;
+  margin: 10px;
+  border: 1px solid #FA6E5D;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 80%;
+  box-sizing: border-box;
+}
+select {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #FA6E5D;
+  border: none;
+  border-radius: 0.5em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+select:hover {
+  background-color: #FA6E5D;
+}
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #FBC02D;
+}
+button[type=submit] {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #FA6E5D;
+  color: #FA6E5D;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 80%;
+  cursor: pointer;
+}
+
+/*一覧*/
+#list {
+    background-image: url(../images/PAKS_BISTROtennai_TP_V.jpg);
+    background-color: #523126;
+    background-blend-mode: soft-light;
+
+    height: 170px;
+    background-position: center; 
+    margin-bottom: 40px;
+}
+#list .page-title{
+    text-align: center;
+    color: #fff7f6;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+  }
+  
+  .restaurant:hover {
+    border-color: #000;
+  }
+  
+  .restaurant-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .restaurant-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .restaurant-details {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .restaurant-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .restaurant-address {
+    color: #666;
+  }
+      
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination a,
+  .pagination span {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+  }
+  
+  .pagination span {
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+  }
+  @media screen and (max-width: 790px) {
+    .pagination a,
+  .pagination span {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+  }
+  }
+  
+
+/*フッター*/
+footer{
+    text-align: center;
+    padding: 26px 0;
+}
+
+/*店舗詳細*/
+#detail {
+    background-image: url(../images/PAK14_bistoroqchikientoakawine_TP_V4.jpg);
+    background-color: #523126;
+    background-blend-mode: soft-light;
+
+    height: 170px;
+    background-position: 0% 65%; 
+    margin-bottom: 40px;
+}
+#detail .page-title{
+    text-align: center;
+    color: #fff7f6;
+}
+.shop-info{
+    position: relative;
+    padding: 4px;
+    margin-bottom: 40px;
+}
+.shop-title{
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.shop-detail-image{
+    width: 700px;
+    height: 400px;
+    object-fit: contain;
+
+
+  margin-right: 3%;
+  border: 2px solid #ccc;
+  background: #eee;
+}
+.shop-detail-text{
+    margin-top: 45px;
+}
+.sub-title{
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px rgb(241, 75, 75) solid;
+    font-weight: normal;
+}
+
+/*店舗マップ*/
+#location{
+    padding: 4% 0;
+}
+#location .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.location-info{
+    width: 22%;
+}
+.location-info p{
+    padding: 12px 10px;
+}
+.location-map{
+    width: 74%;
+}
+.iframe{
+    width: 100%;
+}
