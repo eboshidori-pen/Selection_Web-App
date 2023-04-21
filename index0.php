@@ -15,10 +15,11 @@
 
     <!-- ページヘッダー -->
     <header class="page-header wrapper">
+      <!-- ロゴ画像 -->
       <h1><a href="index0.php"><img class="logo" src="hotpepper-s.gif" alt="ホットペッパーWebサービスクレジット"></a></h1>
     </header>
 
-    <!-- ホームコンテンツ -->
+    <!-- ホームの中身 -->
     <div class="home-content wrapper">
       <h2 class="catch-copy">あなたにぴったりのレストランを探す</h2>
         <a class="button" href="index1.php">検索</a>
